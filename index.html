@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wander – Image Carousel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <header class="intro">
+    <p class="eyebrow"> Image Carousel</p>
+    <h1>Five places worth the trip</h1>
+    <p>Swipe, click, or just wait. The slider rotates on its own and stops when you hover over it.</p>
+  </header>
+
+  <section class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Travel destinations">
+    <div class="viewport">
+      <ul class="track" id="track" aria-live="off">
+        <li class="slide" aria-roledescription="slide" aria-label="1 of 5">
+          <img src="images/mountains.avif" alt="Snow-capped mountains at sunrise">
+          <div class="caption"><h2>Himalayan dawn</h2><p>First light on the high ridges.</p></div>
+        </li>
+        <li class="slide" aria-roledescription="slide" aria-label="2 of 5">
+          <img src="images/beach.avif" alt="A palm tree on a sunny beach">
+          <div class="caption"><h2>Konkan coast</h2><p>Warm sand and a quiet horizon.</p></div>
+        </li>
+        <li class="slide" aria-roledescription="slide" aria-label="3 of 5">
+          <img src="images/forest.png" alt="Pine forest in morning mist">
+          <div class="caption"><h2>Western Ghats</h2><p>Green trails after the monsoon.</p></div>
+        </li>
+        <li class="slide" aria-roledescription="slide" aria-label="4 of 5">
+          <img src="images/desert.jpg" alt="Sand dunes under an orange sun">
+          <div class="caption"><h2>Thar desert</h2><p>Dunes that turn gold at dusk.</p></div>
+        </li>
+        <li class="slide" aria-roledescription="slide" aria-label="5 of 5">
+          <img src="images/aurora.jpg" alt="Green and purple aurora over dark hills">
+          <div class="caption"><h2>Northern lights</h2><p>A night sky worth staying up for.</p></div>
+        </li>
+      </ul>
+
+      <button class="arrow prev" id="prev" aria-label="Previous slide">&#10094;</button>
+      <button class="arrow next" id="next" aria-label="Next slide">&#10095;</button>
+      <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+    </div>
+
+    <div class="controls">
+      <button class="play" id="play" aria-label="Pause auto-rotation">Pause</button>
+      <div class="dots" id="dots" role="tablist" aria-label="Choose a slide"></div>
+      <span class="count" id="count" aria-hidden="true">1 / 5</span>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
